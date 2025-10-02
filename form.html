@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+
+        <nav>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/challenge.html">Challenge</a></li>
+        <li><a href="#">Recipe</a></li>
+        <li><a href="/form.html">Form</a></li>
+    </ul>
+</nav>
+
+
+<header>
+    <h1>Reserve Your Room</h1>
+    <h2>Our Reservation Policies</h2>
+</header>
+
+
+<section class="policies">
+   <ul>
+    <li>Check-in time after 3:00pm on</li>
+    <li>Check-out time by 11:00am or charges are incurred</li>
+    <li>Breakfast and afternoon tea/snacks inlcuded in cost</li>
+    <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+    <li>50% deposit required at booking</li>
+    <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+   </ul>
+</section>
+
+
+<section class="reserve">
+    <form method="post" name="reservation" data-netlify="true">
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="first name" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="last name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="phone" required>
+            </div>
+
+            <div>
+                <label for="checkInDate">Check-in Date</label>
+                <input type="date" name="checkInDate" id="checkInDate" placeholder="mm/dd/yyyy" required>
+            </div>
+
+            <div>
+                <label for="checkOutDate">Check-out Date</label>
+                <input type="date" name="checkOutDate" id="checkOutDate" placeholder="mm/dd/yyyy" required>
+            </div>
+
+            <div>
+                <label for="numberOfGuests">Number of Guests (4 is maximum)</label>
+                <input type="number" name="numberOfGuests" id="numberOfGuests" min="1" max="4" required>
+            </div>
+
+            <div>
+                <label for="roomType">Room Type</label>
+                <select>
+                    <option disabled hidden selected>Choose One</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Deluxe">Deluxe</option>
+                </select>
+            </div>
+
+            <div>
+                <div>Ocean View (additional cost)</div>
+                <label for="view">Yes</label>
+                <input type="radio" name="view" id="yes" value="yes">
+
+                <label for="view">No</label>
+                <input type="radio" name="view" id="no" value="no">
+
+            <div>
+                <div>Additional Requests</div>
+            <textarea name="additionalRequests" id="additionalRequests"></textarea> 
+           </div>
+
+           <div>
+                <label for="Vaccine Proof">Upload Vaccine Proof</label>
+                <input type="file" name="file" id="file">
+            </div> 
+
+            <div>
+                <label for="agreeToTerms">I agree to all the terms listed above.</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+
+            <div>
+                <label for="password">Create a password to return. Username is your email.</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+            <input type="submit" value="Submit">
+            </div>
+
+            <div>
+            <input type="reset" value="Reset">
+            </div>    
+            
+            </div>
+
+            <hr>
+
+<footer>
+
+    <small>
+        &copy;2025 The Independence Inn<br>
+        New Britain, CT <br>
+    </small>
+
+
+        </form>
+    </section>
+
+
+    </div>
+</body>
+</html>
