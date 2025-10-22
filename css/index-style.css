@@ -1,0 +1,110 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #1C352D;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(28, 53, 45);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-underline-offset: 8px;
+    text-decoration: wavy;
+    text-decoration-color:rgb(166, 178, 139) ;
+       
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline dotted rgb(245, 201, 176);
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+
+nav li {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav a,
+header {
+    text-align: justify;
+    text-decoration: none;
+}
+
+nav a,
+.assignments a,
+footer a {
+        color: rgb(28, 53, 45);
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: wavy rgb(166, 178, 139) 1.5px;
+    color:rgb(245, 201, 176) ;
+}
+
+header p {
+    font-size: 70%;
+    text-align: center;
+}
+
+.assignments a:link,
+.assignments a:visited {
+    line-height: 1.5;
+}
+
+.assignments a:hover,
+.assignments a:active {
+    text-decoration: none rgb(166, 178, 139);
+    text-transform: uppercase;
+    text-underline-offset: 4.5px;
+}
+
+.assignments li {
+    list-style-type: none;
+}
+.assignments li::before {
+    content: "\2728";
+    font-size: .8rem;
+}
+
+footer a {
+    color: rgb(166, 178, 139);
+    line-height: 75%;
+    font-weight: 400;
+}
+
+footer p {
+    color: rgb(166, 178, 139);
+    font-size: .8rem;
+}
+
+footer a:hover {
+    color: rgb(245, 201, 176);
+}
