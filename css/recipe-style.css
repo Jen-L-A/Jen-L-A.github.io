@@ -1,0 +1,153 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: #c98226;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    padding: 20px;
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: burlywood;
+    color: peru;
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Patua One", serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 6% 0;
+    text-align: center;
+    text-shadow: 3px 5px 3px #ccc;
+}
+
+img {
+    float: left;
+    max-width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50%;
+    box-shadow: 5px 5px #ccc;
+    shape-outside: circle(50%);
+}
+
+header h2 {
+    margin-top: 3%;
+}
+
+.rate {
+    clear: both;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.emoji::after {
+    content: "\1f370";
+}
+
+.details,
+.ingredients,
+.instructions,
+.nutrition {
+    width: 40%;
+    float: left;
+}
+
+.details,
+.instructions {
+    margin-right: 10%;
+    margin-left: 2%;
+}
+
+
+blockquote {
+    clear: both;
+    width: 200px;
+    height: 200px;
+    padding: 55px 10px 0 20px;
+    border-radius:50%;
+    background-color: #c98226;
+    outline: dotted 6px burlywood;
+    outline-offset: 10px;
+    margin: 40px auto;
+    justify-content: center;
+   
+}
+
+
+blockquote small {
+    text-align: right;
+    margin-top: 50px;
+    right: 25px;
+}
+
+footer {
+    background-color: #c98226;
+    color: aliceblue;
+    padding: 2% 0;
+    margin-top:100px;
+
+}
+
+
+footer a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+footer p {
+    clear: both;
+}
