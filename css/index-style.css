@@ -23,6 +23,45 @@ h1 {
     text-transform: uppercase;
 }
 
+    @keyframes slidedown {
+        0% {
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+    .main-title {
+        animation: slidedown 3s ease-out;
+    }
+
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.camera-photo {
+    display: block;
+    margin: 20px auto;
+    transition: transform .5s ease, box-shadow .5s ease;
+    animation: fadeup 3s ease-out;
+}
+
+.camera-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35x rgba(0,0,0,0,0.55);
+}
+
 img {
     display: block;
     margin: 0 auto;
@@ -36,6 +75,14 @@ h3 {
     font-size: 1.2rem;
 }
 
+nav {
+    float: left;
+    position: relative;
+    top: 0;
+    background-color:#FFC50F;
+    padding-right: 10px;
+    margin-left: -20px;
+}
 
 nav li {
     font-size: 1rem;
@@ -94,6 +141,12 @@ header p {
     font-size: .8rem;
 }
 
+.assignments {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 0;
+}
+
 footer a {
     color: rgb(166, 178, 139);
     line-height: 75%;
@@ -107,4 +160,11 @@ footer p {
 
 footer a:hover {
     color: rgb(245, 201, 176);
+}
+
+.footer-credit {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
 }
